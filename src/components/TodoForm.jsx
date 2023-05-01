@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from 'prop-types';
 
 const TodoForm = ({ addTodo }) => {
 
@@ -38,6 +39,10 @@ const TodoForm = ({ addTodo }) => {
       <span className="warning">{msg}</span>
     </>
   );
+};
+
+TodoForm.propTypes = {
+  addTodo: PropTypes.func.isRequired,
 };
 
 export default TodoForm;

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from 'prop-types';
 
 const TodoItem = (props) => {
 
@@ -12,13 +13,6 @@ const TodoItem = (props) => {
   const actionBtnStyles = {
     backgroundColor: 'transparent',
     padding: '0.25rem 0.35rem',
-  };
-  const editInputStyles = {
-    width: 'calc(100%)',
-    padding: '0.5rem',
-    borderRadius: 'calc(0.5 * 100px)',
-    fontSize: '1rem',
-    border: 'none',
   };
 
   const handleEditing = () => {
@@ -71,6 +65,13 @@ const TodoItem = (props) => {
       }
     </li>
   );
+};
+
+TodoItem.propTypes = {
+  item: PropTypes.object.isRequired,
+  editTodo: PropTypes.func.isRequired,
+  delTodo: PropTypes.func.isRequired,
+  handleChange: PropTypes.func.isRequired,
 };
 
 export default TodoItem;
