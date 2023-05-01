@@ -61,6 +61,7 @@ form {
   box-shadow: 0px 4px 14px 0px rgba(70, 70, 70, 0.15);
 }
 
+.edit-input,
 form input[type="text"] {
   width: 70%;
   padding-right: 5px;
@@ -70,10 +71,18 @@ form input[type="text"] {
   border: none;
 }
 
+.edit-input:hover,
+.edit-input:focus,
 form input[type="text"]:hover,
 form input[type="text"]:focus {
   border: none;
   outline: 0;
+}
+
+.edit-input {
+  width: calc(100% - 1rem);
+  border: 1px solid salmon;
+  border-radius: calc(0.1 * 50px);
 }
 
 form input[type="text"]::placeholder {

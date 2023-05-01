@@ -1,6 +1,6 @@
 import TodoItem from "./TodoItem";
 
-const TodoList = ({ todos, handleChange, delTodo }) => {
+const TodoList = ({ todos, handleChange, editTodo, delTodo }) => {
 
   const listStyle = {
     listStyle: 'none',
@@ -12,6 +12,7 @@ const TodoList = ({ todos, handleChange, delTodo }) => {
       {todos.map(item => (
         <TodoItem key={item.id} item={item}
           handleChange={handleChange}
+          editTodo={editTodo}
           delTodo={delTodo}
         />
       ))}

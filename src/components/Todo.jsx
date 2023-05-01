@@ -35,6 +35,19 @@ const Todo = () => {
     setTodo([...todo, { ...item, id: uuidv4() }]);
   };
 
+  const editTodo = (item) => {
+    setTodo((prev) => prev.map((task) => {
+      if (item.id === task.id) {
+        return {
+          ...task,
+          name: item.name,
+        };
+      }
+
+      return task;
+    }));
+  };
+
   const delTodo = (id) => {
     setTodo([
       ...todo.filter((item) => {
@@ -53,6 +66,7 @@ const Todo = () => {
 
       <TodoList
         todos={todo}
+        editTodo={editTodo}
         delTodo={delTodo}
         handleChange={handleChange}
       />
