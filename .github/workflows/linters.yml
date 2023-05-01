@@ -16,10 +16,10 @@ jobs:
           node-version: "18.x"
       - name: Setup ESLint
         run: |
-          npm install
+          npm install --save-dev eslint eslint-plugin-react-refresh eslint-plugin-react-hooks eslint-plugin-react
           [ -f .eslintrc.cjs ]
       - name: ESLint Report
-        run: npx run lint
+        run: npx eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0
 
   nodechecker:
     name: node_modules checker
