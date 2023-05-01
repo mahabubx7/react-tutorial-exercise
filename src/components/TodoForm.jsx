@@ -35,7 +35,7 @@ const TodoForm = ({ addTodo }) => {
         </button>
       </form>
 
-      <span>{msg}</span>
+      <span className="warning">{msg}</span>
     </>
   );
 };

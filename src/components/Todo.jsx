@@ -44,7 +44,7 @@ const Todo = () => {
   };
 
   return (
-    <>
+    <div className="page">
       <header>
         <h1>todos</h1>
       </header>
@@ -56,7 +56,7 @@ const Todo = () => {
         delTodo={delTodo}
         handleChange={handleChange}
       />
-    </>
+    </div>
   );
 };
 

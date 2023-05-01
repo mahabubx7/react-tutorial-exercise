@@ -40,3 +40,64 @@
 .read-the-docs {
   color: #888;
 }
+
+
+/* My CSS */
+.page {
+  width: 100%;
+  max-width: 580px;
+  margin: 0 auto;
+  border: 1px solid salmon;
+  padding: 1.5rem 1rem;
+  border-radius: 0.35rem;
+}
+
+
+form {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1rem;
+  border-radius: calc(0.1 * 100px);
+  box-shadow: 0px 4px 14px 0px rgba(70, 70, 70, 0.15);
+}
+
+form input[type="text"] {
+  width: 70%;
+  padding-right: 5px;
+  padding-left: 10px;
+  border-radius: calc(0.5 * 100px);
+  font-size: 1rem;
+  border: none;
+}
+
+form input[type="text"]:hover,
+form input[type="text"]:focus {
+  border: none;
+  outline: 0;
+}
+
+form input[type="text"]::placeholder {
+  color: #5b5b5b;
+}
+
+form button[type="submit"] {
+  background: transparent;
+  color: #5b5b5b;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-weight: 600;
+  outline: 0;
+  border: none;
+}
+
+form button[type="submit"]:hover {
+  border: none;
+  outline: 0;
+}
+
+.warning {
+  font-size: 13px;
+  color: red;
+  margin-top: 5px;
+  display: block;
+}
