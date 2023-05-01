@@ -89,7 +89,7 @@ Clone this repository to your desired folder:
 Execute this:
 
 ```sh
-  git clone git@github.com:mahabubx7/math-magicians.git
+  git clone git@github.com:mahabubx7/react-tutorial-exercise.git
 ```
 
 ### Install
@@ -128,8 +128,7 @@ For running Linter-checks:
 Not available yet. [It's coming soon.]
 
 ### Deployment
-This section will be updated later (when deploy task will come).
-<!-- Deployed in `Github Pages`. [Live Preview](https://mahabubx7.github.io/math-magicians/) -->
+Deployed in `Netlify`. [Live Preview](https://react-tutorials-exercise-mx7.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
